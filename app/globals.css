@@ -14,6 +14,7 @@
          --color-darkColor: #151515;
          --color-lightColor: #52525b;
          --color-lightOrange: #fca99b;
+         --color-shop_light_green: #3b9c3c;
          /* lightBlue: #7688DB,
          darkBlue: #6c7fd8,
          darkText: #686e7d,
@@ -63,6 +64,7 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  
 }
 
 :root {
@@ -140,5 +142,8 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  .hoverEffect{
+    @apply transition-all duration-300 ease-in-out;
   }
 }
