@@ -8,12 +8,11 @@ import FavoriteButton from './FavoriteButton';
 import SignIn from './SignIn';
 import MobileMenu from './MobileMenu';
 import { currentUser } from '@clerk/nextjs/server';
-import { log } from 'console';
 import { ClerkLoaded, SignedIn, UserButton } from '@clerk/nextjs';
 
 const Header = async() => {
   const user =await currentUser();
-  console.log("Current User in Header:", user);
+  
   return (
     <header className='bg-white py-5' >
       <Container className='flex items-center justify-between text-lightColor'> 
